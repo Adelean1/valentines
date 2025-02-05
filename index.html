@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Initial Container with Stefi button -->
+    <div class="initial-container">
+        <button class="initial-btn" onclick="startExperience()">Stefi...  </button>
+    </div>
+
+    <!-- Gif and Heart Container -->
+    <div class="gif-heart-wrapper" id="gif-heart-wrapper">
+        <img src="seal.webp" alt="Seal" class="seal-large">
+        <div class="heart">❤️</div>
+    </div>
+
+    <!-- Main Content with text and buttons -->
+    <div class="container" id="main-content">
+        <!-- Question Text -->
+        <h1>Will you be my Valentine?</h1>
+
+        <!-- Buttons -->
+        <button class="btn yes" id="yes-btn" onclick="yesClicked()">Yes</button>
+        <button class="btn no" onmouseover="moveNo()">No</button>
+    </div>
+
+    <!-- Container for Video -->
+<div id="video-container" style="display: none; opacity: 0;">
+    <video width="1" height="1" controls autoplay>
+        <source src="seals.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
